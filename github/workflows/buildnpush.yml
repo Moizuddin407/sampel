@@ -1,0 +1,35 @@
+# # Text
+# name : Some Text
+
+# # Number
+# age : 10
+
+# # Bool
+# access : true
+
+# # List
+# course:
+#   - Devops
+#   - Science
+
+# # Object
+# addresses : 
+#   home_addr:
+#     house_number: 111
+#     street: 12
+#   office_addr:
+
+name : Docker Build and Push
+
+on:
+  push:
+    branches:
+      -main
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses : actions/checkout@v4
